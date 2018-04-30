@@ -4,6 +4,10 @@
 		<meta charset="utf-8">
 		<title>Day 2</title>
 		<style>
+			*{
+				box-sizing: border-box;
+				font-family: sans-serif;
+			}
 			body{
 				background-color: #63cdda;
 				color: #1e272e;
@@ -12,28 +16,45 @@
 				text-decoration: none;
 				color: blue;
 			}
+			.bold{
+				font-weight: bold;
+			}
+			.crossOut{
+				text-decoration: line-through;
+			}
 		</style>
 	</head>
 	<body>
-		<h3>Useful Links</h3>
-		<ul>
-			<li><a href="https://github.com/veratechnz">Jared's Github</a></li>
-			<li>Bulma instead of bootstrap</li>
-		</ul>
-		<h3>Code</h3>
-		<ul>
-			<li>console.log - show, test</li>
-			<li>console.dir - change, look into the code</li>
-		</ul>
 		<h3>Notes</h3>
 		<ul>
 			<li>Atom editer is made out of js!</li>
 			<li>Where can you put your JS.</li>
 			<ul>
-				<li>Within HTML using style, inside tags. Not the best.</li>
+				<li><span class="crossOut">Within HTML using style, inside tags.</span> Not the best.</li>
 				<li>Before the closing body tag.</li>
 				<li>In an external page.</li>
 			</ul>
+			<li>Data Types</li>
+			<ul>
+				<li class="bold">Numeric - number</li>
+				<li class="bold">String - text</li>
+				<li class="bold">Boolean - true or false</li>
+				<li>Null - nothing, nonexistent or invalid</li>
+				<li>Object - Everything</li>
+				<li>Undefined</li>
+				<li>Symbol</li>
+				<li>Array - a bag that you can throw things into []</li>
+			</ul>
+		</ul>
+		<h4>Code</h4>
+		<ul>
+			<li>console.log - show, test</li>
+			<li>console.dir - change, look into the code</li>
+		</ul>
+		<h3>Useful Links</h3>
+		<ul>
+			<li><a href="https://github.com/veratechnz">Jared's Github</a></li>
+			<li>Bulma instead of bootstrap</li>
 		</ul>
 		<h3>Look into</h3>
 		<ul>
