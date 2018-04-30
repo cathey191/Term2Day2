@@ -25,22 +25,41 @@
 		</style>
 	</head>
 	<body>
-		<h1>The onclick Event</h1>
+		<div class="firstTask">
+			<h2>First Task</h2>
+			<p>The onclick event is used to trigger a function when an element is clicked on.</p>
+			<p>Click the button to trigger a function that will output "Hello World" in a p element with id="demo".</p>
+			<button id="button">Click me</button>
+			<p id="demo"></p>
 
-		<p>The onclick event is used to trigger a function when an element is clicked on.</p>
+			<script>
+				document.getElementById("button").onclick = function(){myFunction()};
 
-		<p>Click the button to trigger a function that will output "Hello World" in a p element with id="demo".</p>
+				function myFunction(){
+				  document.getElementById("demo").innerHTML = "Hello World";
+				}
+			</script>
+		</div>
+		<div class="secondTask">
+			<h2>Second Task</h2>
+			<button id="2button">Click me</button>
+			<p id="dateThing"></p>
 
-		<button id="button">Click me</button>
+			<script>
 
-		<p id="demo"></p>
+				var d = new Date();
+				var inPut = document.getElementById("dateThing");
 
-		<script>
-			document.getElementById("button").onclick = function(){myFunction()};
+				document.getElementById("2button").onclick = function(){numberTwo()};
 
-			function myFunction(){
-			  document.getElementById("demo").innerHTML = "Hello World";
-			}
-		</script>
+				function numberTwo(){
+				  inPut.innerHTML = d.getFullYear();
+					setTimeout(changeColor, 3000);
+				}
+				function changeColor(){
+					inPut.style.color = 'purple';
+				}
+			</script>
+		</div>
 	</body>
 </html>
