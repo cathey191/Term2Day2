@@ -22,6 +22,12 @@
 			.crossOut{
 				text-decoration: line-through;
 			}
+			.thirdTask{
+				background-color: #0be881;
+				width: 80vw;
+				height: 20vw;
+				margin: 0 auto;
+			}
 		</style>
 	</head>
 	<body>
@@ -60,6 +66,21 @@
 					inPut.style.color = 'purple';
 				}
 			</script>
+		</div>
+		<div class="thirdTask" id="all">
+			<h2>Third Task</h2>
+			<button id="3button">Click me</button>
+			<p id="dayThing"></p>
+
+			<script>
+				document.getElementById("3button").onclick = function(){hiding()};
+
+				function hiding(){
+					// document.getElementById("all").style.display = "none";
+					document.getElementById("all").style.visibility = 'hidden';
+				}
+			</script>
+
 		</div>
 	</body>
 </html>
